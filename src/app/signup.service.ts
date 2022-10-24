@@ -1,14 +1,14 @@
 import { inject, injectable } from "tsyringe";
 
-interface IMailService {
+export interface IMailService {
     sendMail(to: string, message: string): Promise<void>;
 }
 
-interface IEncrypterService {
+export interface IEncrypterService {
     encrypt(value: string): Promise<string>;
 }
 
-interface IUserRepository {
+export interface IUserRepository {
     create(name: string, email: string, password: string): Promise<void>;
 }
 
