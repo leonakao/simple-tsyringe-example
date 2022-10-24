@@ -1,7 +1,6 @@
 import { container, injectable } from "tsyringe";
 import { SignUpService } from "./signup.service";
 
-@injectable()
 export class SignUpController {
     constructor() {}
     
