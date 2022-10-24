@@ -1,4 +1,4 @@
-import { inject } from "tsyringe";
+import { inject, injectable } from "tsyringe";
 
 interface IMailService {
     sendMail(to: string, message: string): Promise<void>;
@@ -12,6 +12,7 @@ interface IUserRepository {
     create(name: string, email: string, password: string): Promise<void>;
 }
 
+@injectable()
 export class SignUpService {
     constructor(
         @inject('UserRepository') private readonly userRepository: IUserRepository,
