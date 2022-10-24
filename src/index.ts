@@ -1,1 +1,1 @@
-import './DI/dependecy-injection'
+import './app/index'
