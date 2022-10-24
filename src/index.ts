@@ -1,1 +1,1 @@
-import './dependecy-injection'
+import './DI/dependecy-injection'
