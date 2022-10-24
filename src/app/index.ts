@@ -3,10 +3,13 @@ import './container'
 import { SignUpController } from './signup.controller';
 
 class Server {
-    public static start() {
-        SignUpController.handle().then(result => {
-            console.log(result);
-        }).catch(error => console.log(error))
+    public static async start() {
+        try {
+            await SignUpController.handle()
+        } catch (err) {
+            console.log('Ocorreu um erro')
+            console.error(err)
+        }
     }
 }
 
