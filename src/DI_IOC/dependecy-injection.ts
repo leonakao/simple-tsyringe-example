@@ -64,6 +64,9 @@ class CreateClientUseCase {
 }
 
 
-const c = new CreateClientUseCase(new ClientRepositoryCache())
+const client = new CreateClientUseCase(new ClientRepositoryCache())
+const client2 = new CreateClientUseCase(new ClientRepositoryInMemory())
 
-c.run('test')
+client.run('test #1')
+
+client2.run('test #2')
