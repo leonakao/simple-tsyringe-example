@@ -1,2 +1,2 @@
-// import './app/index'
-import './DI_IOC/dependecy-injection'
+import './app/index.ts';
+// import './DI_IOC/dependecy-injection'
